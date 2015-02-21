@@ -1,0 +1,90 @@
+.container {
+	
+}
+
+.header {
+	position: relative;
+	height: 200px;
+	border-bottom: 4px solid black;
+	margin-bottom: 10px;
+
+}
+
+.icon-pic {
+	width: 20%;
+	height: 20%;
+	display: block;
+	margin: 10px auto;
+	padding: 10px;
+	border: 3px solid black;
+}
+
+.title {
+	text-align: center;
+	font-family: 'Pacifico', cursive;
+}
+
+.intro {
+	text-align: center;
+	font-family: 'Permanent Marker', cursive;
+	margin-top: 100px;
+	margin-bottom: 0px;
+	font-size: 60px;
+}
+
+.sub-intro {
+	text-align: center;
+	font-family: 'Trebuchet MS';
+	font-size: 20px;
+}
+
+.enter-box {
+	width: 350px;
+	height: 50px;
+	background: black;
+	margin: 0 auto;
+	cursor: pointer;
+}
+
+.box-text {
+	text-align: center;
+	color: white;
+	font-family: 'Trebuchet MS';
+	font-size: 30px;
+	padding: 5px;
+	margin: auto;
+}
+
+.enter-box:hover {
+	background: gray;
+}
+
+.layer-2{
+	display: none;
+}
+
+.selfbets {
+	margin-top: 50px;
+}
+.alphabets {
+	text-align: center;
+	font-size: 100px;
+	font-family: 'Luckiest Guy', cursive;
+}
+
+.guide {
+	text-align: center;
+	font-family: 'Trebuchet MS';
+	font-size: 20px;
+}
+
+.back {
+	text-align: center;
+	font-size: 60px;
+	font-family: 'Permanent Marker', cursive;
+	cursor: pointer;
+}
+
+.back:hover {
+	color:gray;
+}

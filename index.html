@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Andrea's Website</title>
+		<script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+		<script type="text/javascript" src="js/custom.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Permanent+Marker' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Luckiest+Guy' rel='stylesheet' type='text/css'>
+	</head>
+
+	<body>
+
+		<div class="container">
+			<div class="header">
+				<div class="col-md-3"></div>
+				<div class="col-md-6">
+					<img class="img-circle icon-pic" src="images/pic.png" >
+					<h2 class="title"> Learning to be a front-end ninja </h2>
+				</div>
+				<div class="col-md-3"></div>
+			</div>
+			<div class="content">
+				<div class="surface">
+					<div class="col-md-4"></div>
+					<div class="col-md-4">
+						<h3 class="intro"> Who am I? </h3>
+						<p class="sub-intro"> Click below if you are curious </p>
+						<div class="enter-box">
+							<p class="box-text"> ENTER </p>
+						</div>
+					</div>
+					<div class="col-md-4"></div>
+				</div>
+
+				<div class="col-md-12 layer-2">
+					<div class="selfbets">
+						<p class="alphabets"> ABCDEFGHIJKLM </p>
+						<p class="alphabets"> NOPQRSTUVWXYZ </p>
+						<p class="guide"> Hover over each alphabet to get a description about me </p>
+						<p class="back"> < </p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script>
+			$('.enter-box').click(function() {
+				$('.surface').hide();
+				$('.layer-2').css('display','block');
+			});
+
+			$('.back').click(function() {
+				$('.layer-2').css('display','none');
+				$('.surface').show();
+			})
+		</script>
+	</body>
+
+</html>
