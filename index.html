@@ -39,10 +39,38 @@
 
 				<div class="col-md-12 layer-2">
 					<div class="selfbets">
-						<p class="alphabets"> ABCDEFGHIJKLM </p>
-						<p class="alphabets"> NOPQRSTUVWXYZ </p>
+						<p class="alphabets"> 
+							<span class="letter">A</span>
+							<span class="letter">B</span>
+							<span class="letter">C</span>
+							<span class="letter">D</span>
+							<span class="letter">E</span>
+							<span class="letter">F</span>
+							<span class="letter">G</span>
+							<span class="letter">H</span>
+							<span class="letter">I</span>
+							<span class="letter">J</span>
+							<span class="letter">K</span>
+							<span class="letter">L</span>
+							<span class="letter">M</span>
+						</p>
+						<p class="alphabets"> 
+							<span class="letter">N</span>
+							<span class="letter">O</span>
+							<span class="letter">P</span>
+							<span class="letter">Q</span>
+							<span class="letter">R</span>
+							<span class="letter">S</span>
+							<span class="letter">T</span>
+							<span class="letter">U</span>
+							<span class="letter">V</span>
+							<span class="letter">W</span>
+							<span class="letter">X</span>
+							<span class="letter">Y</span>
+							<span class="letter">Z</span>
+						</p>
 						<p class="guide"> Hover over each alphabet to get a description about me </p>
-						<p class="back"> < </p>
+						<p class="back"> &lt; </p>
 					</div>
 				</div>
 			</div>
@@ -58,6 +86,19 @@
 				$('.layer-2').css('display','none');
 				$('.surface').show();
 			})
+
+			
+			var red = Math.floor(Math.random()*255);
+			var green = Math.floor(Math.random()*255);
+			var blue = Math.floor(Math.random()*255);
+			var randomRGB = 'rgb('+red+','+green+','+blue+')';
+			$('.letter').hover(
+				function() {
+					$('.letter:hover').css('color',randomRGB);
+				}, function() {
+					$('.letter').css('color','black');
+				}
+			);
 		</script>
 	</body>
 
