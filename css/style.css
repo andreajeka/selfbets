@@ -64,19 +64,65 @@
 }
 
 .selfbets {
-	margin-top: 50px;
+	margin-top: 20px;
 }
 .alphabets {
 	text-align: center;
 	font-size: 100px;
 	font-family: 'Luckiest Guy', cursive;
 	cursor: pointer;
+	position: relative;
+	top: 50px;
+}
+
+.popout-top{
+	position: absolute;
+	height: 100px;
+	margin: 0;
+	padding: 0;
+	top: 5px;
+}
+
+.bubble{
+	position: relative;
+	height: 80px;
+	width: 240px;
+	margin: 0;
+	padding: 0;
+	border: 1px solid #eee;
+	background-color: #eee;
+	border-radius: 10px;
+}
+
+.pointer {
+	width: 20px;
+	height:20px;
+	margin-left: 90px;
+	border-top: 20px solid #eee;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+
+}
+
+.descbox {
+	position: relative;
+	top: 50%;
+	padding: 20px;
+	transform: translateY(-45%);
+}
+
+.desc {
+	font-size: 20px;
+	text-align: center;
+	font-family: 'Fjalla One', sans-serif;
+	line-height: 1.5em;
 }
 
 .guide {
 	text-align: center;
 	font-family: 'Trebuchet MS';
 	font-size: 20px;
+	margin-top: 80px;
 }
 
 .back {
@@ -84,7 +130,9 @@
 	font-size: 60px;
 	font-family: 'Permanent Marker', cursive;
 	cursor: pointer;
+	margin-top: -10px;
 }
 .back:hover {
 	color:gray;
 }
+

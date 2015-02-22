@@ -11,6 +11,7 @@
 		<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Permanent+Marker' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Luckiest+Guy' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
 	</head>
 
 	<body>
@@ -39,20 +40,28 @@
 
 				<div class="col-md-12 layer-2">
 					<div class="selfbets">
+						<div class="popout-top">
+								<div class="bubble">
+									<div class="descbox">
+										<p class="desc"></p>
+									</div>
+								</div>
+								<div class="pointer"></div>
+						</div>
 						<p class="alphabets"> 
-							<span class="letter">A</span>
-							<span class="letter">B</span>
-							<span class="letter">C</span>
-							<span class="letter">D</span>
-							<span class="letter">E</span>
-							<span class="letter">F</span>
-							<span class="letter">G</span>
-							<span class="letter">H</span>
-							<span class="letter">I</span>
-							<span class="letter">J</span>
-							<span class="letter">K</span>
-							<span class="letter">L</span>
-							<span class="letter">M</span>
+							<span class="letter A">A</span>
+							<span class="letter B">B</span>
+							<span class="letter C">C</span>
+							<span class="letter D">D</span>
+							<span class="letter E">E</span>
+							<span class="letter F">F</span>
+							<span class="letter G">G</span>
+							<span class="letter H">H</span>
+							<span class="letter I">I</span>
+							<span class="letter J">J</span>
+							<span class="letter K">K</span>
+							<span class="letter L">L</span>
+							<span class="letter M">M</span>
 						</p>
 						<p class="alphabets"> 
 							<span class="letter">N</span>
@@ -80,23 +89,175 @@
 			$('.enter-box').click(function() {
 				$('.surface').hide();
 				$('.layer-2').css('display','block');
+				$('.popout-top').css('display','none');
 			});
 
 			$('.back').click(function() {
 				$('.layer-2').css('display','none');
 				$('.surface').show();
-			})
+			});
 
-			
 			var red = Math.floor(Math.random()*255);
 			var green = Math.floor(Math.random()*255);
 			var blue = Math.floor(Math.random()*255);
 			var randomRGB = 'rgb('+red+','+green+','+blue+')';
-			$('.letter').hover(
+			$('.A').hover(
 				function() {
-					$('.letter:hover').css('color',randomRGB);
+					$('.A:hover').css('color',randomRGB);
+					$('.popout-top').css('display','');
+					$('.desc').html('Andrea Juliati Kurniasari is my full name');
 				}, function() {
-					$('.letter').css('color','black');
+					$('.A').css('color','black');
+					$('.popout-top').css('display','none');
+					$('.desc').html('');
+				}
+			);
+
+			$('.B').hover(
+				function() {
+					$('.B:hover').css('color',randomRGB);
+					$('.popout-top').css('display','');
+					$('.popout-top').css('margin-left','75px');
+					$('.desc').html('Bachelor of Engineering soon to be');
+				}, function() {
+					$('.B').css('color','black');
+					$('.popout-top').css('display','none');
+					$('.popout-top').css('margin-left','');
+					$('.desc').html('');
+				}
+			);
+
+			$('.C').hover(
+				function() {
+					$('.C:hover').css('color',randomRGB);
+					$('.popout-top').css('display','');
+					$('.popout-top').css('margin-left','160px');
+					$('.desc').html('Computer Science degree is coming');
+				}, function() {
+					$('.C').css('color','black');
+					$('.popout-top').css('display','none');
+					$('.popout-top').css('margin-left','');
+					$('.desc').html('');
+				}
+			);
+
+			$('.D').hover(
+				function() {
+					$('.D:hover').css('color',randomRGB);
+					$('.popout-top').css('display','');
+					$('.popout-top').css('margin-left','230px');
+					$('.desc').html('Dogs Lover :)');
+				}, function() {
+					$('.D').css('color','black');
+					$('.popout-top').css('display','none');
+				}
+			);
+
+			$('.E').hover(
+				function() {
+					$('.E:hover').css('color',randomRGB);
+					$('.popout-top').css('display','');
+					$('.popout-top').css('margin-left','300px');
+					$('.desc').html('Exciting');
+				}, function() {
+					$('.E').css('color','black');
+					$('.popout-top').css('display','none');
+				}
+			);
+
+			$('.F').hover(
+				function() {
+					$('.F:hover').css('color',randomRGB);
+					$('.popout-top').css('display','');
+					$('.popout-top').css('margin-left','370px');
+					$('.desc').html('Friendly');
+				}, function() {
+					$('.F').css('color','black');
+					$('.popout-top').css('display','none');
+				}
+			);
+
+			$('.G').hover(
+				function() {
+					$('.G:hover').css('color',randomRGB);
+					$('.popout-top').css('display','');
+					$('.popout-top').css('margin-left','445px');
+					$('.desc').html('Gamer');
+				}, function() {
+					$('.G').css('color','black');
+					$('.popout-top').css('display','none');
+				}
+			);
+
+			$('.H').hover(
+				function() {
+					$('.H:hover').css('color',randomRGB);
+					$('.popout-top').css('display','');
+					$('.popout-top').css('margin-left','525px');
+					$('.desc').html('Hard-working');
+				}, function() {
+					$('.H').css('color','black');
+					$('.popout-top').css('display','none');
+				}
+			);
+
+			$('.I').hover(
+				function() {
+					$('.I:hover').css('color',randomRGB);
+					$('.popout-top').css('display','');
+					$('.popout-top').css('margin-left','590px');
+					$('.desc').html('Indonesian');
+				}, function() {
+					$('.I').css('color','black');
+					$('.popout-top').css('display','none');
+				}
+			);
+
+			$('.J').hover(
+				function() {
+					$('.J:hover').css('color',randomRGB);
+					$('.popout-top').css('display','');
+					$('.popout-top').css('margin-left','660px');
+					$('.desc').html('Jokeful');
+				}, function() {
+					$('.J').css('color','black');
+					$('.popout-top').css('display','none');
+				}
+			);
+
+			$('.K').hover(
+				function() {
+					$('.K:hover').css('color',randomRGB);
+					$('.popout-top').css('display','');
+					$('.popout-top').css('margin-left','730px');
+					$('.desc').html('Kindhearted (I hope)');
+				}, function() {
+					$('.K').css('color','black');
+					$('.popout-top').css('display','none');
+				}
+			);
+
+			$('.L').hover(
+				function() {
+					$('.L:hover').css('color',randomRGB);
+					$('.popout-top').css('display','');
+					$('.popout-top').css('margin-left','795px');
+					$('.desc').html('Liberal');
+				}, function() {
+					$('.L').css('color','black');
+					$('.popout-top').css('display','none');
+				}
+			);
+
+			$('.M').hover(
+				function() {
+					$('.M:hover').css('color',randomRGB);
+					$('.popout-top').css('display','');
+					$('.popout-top').css('margin-left','885px');
+					$('.desc').html('Mindful');
+				}, function() {
+					$('.M').css('color','black');
+					$('.popout-top').css('display','none');
 				}
 			);
 		</script>
