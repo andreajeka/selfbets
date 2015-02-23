@@ -27,7 +27,7 @@
 .intro {
 	text-align: center;
 	font-family: 'Permanent Marker', cursive;
-	margin-top: 100px;
+	margin-top: 120px;
 	margin-bottom: 0px;
 	font-size: 60px;
 }
@@ -43,6 +43,7 @@
 	height: 50px;
 	background: black;
 	margin: 0 auto;
+	margin-top: 30px;
 	cursor: pointer;
 }
 
@@ -66,7 +67,7 @@
 .selfbets {
 	margin-top: 20px;
 }
-.alphabets {
+.alphabets-top {
 	text-align: center;
 	font-size: 100px;
 	font-family: 'Luckiest Guy', cursive;
@@ -75,12 +76,30 @@
 	top: 50px;
 }
 
+.alphabets-bot {
+	text-align: center;
+	font-size: 100px;
+	font-family: 'Luckiest Guy', cursive;
+	cursor: pointer;
+	position: relative;
+	top: 100px;
+}
+
 .popout-top{
 	position: absolute;
 	height: 100px;
 	margin: 0;
 	padding: 0;
 	top: 5px;
+}
+
+.popout-bot{
+	display: none;
+	position: absolute;
+	margin:0;
+	padding: 0;
+	top: 200px;
+	margin-left: -40px;
 }
 
 .bubble{
@@ -101,7 +120,6 @@
 	border-top: 20px solid #eee;
 	border-left: 20px solid transparent;
 	border-right: 20px solid transparent;
-
 }
 
 .descbox {
@@ -118,11 +136,19 @@
 	line-height: 1.5em;
 }
 
+.back-box {
+	position: relative;
+	top: -80px;
+	left: -100px;
+	width: 50px;
+}
+
 .guide {
 	text-align: center;
 	font-family: 'Trebuchet MS';
-	font-size: 20px;
-	margin-top: 80px;
+	font-size: 18px;
+	padding: 0px;
+	margin-top: -100px;
 }
 
 .back {
@@ -130,7 +156,8 @@
 	font-size: 60px;
 	font-family: 'Permanent Marker', cursive;
 	cursor: pointer;
-	margin-top: -10px;
+	
+
 }
 .back:hover {
 	color:gray;
