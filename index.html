@@ -64,19 +64,19 @@
 							<span class="letter M">M</span>
 						</p>
 						<p class="alphabets-bot"> 
-							<span class="letter">N</span>
-							<span class="letter">O</span>
-							<span class="letter">P</span>
-							<span class="letter">Q</span>
-							<span class="letter">R</span>
-							<span class="letter">S</span>
-							<span class="letter">T</span>
-							<span class="letter">U</span>
-							<span class="letter">V</span>
-							<span class="letter">W</span>
-							<span class="letter">X</span>
-							<span class="letter">Y</span>
-							<span class="letter">Z</span>
+							<span class="letter N">N</span>
+							<span class="letter O">O</span>
+							<span class="letter P">P</span>
+							<span class="letter Q">Q</span>
+							<span class="letter R">R</span>
+							<span class="letter S">S</span>
+							<span class="letter T">T</span>
+							<span class="letter U">U</span>
+							<span class="letter V">V</span>
+							<span class="letter W">W</span>
+							<span class="letter X">X</span>
+							<span class="letter Y">Y</span>
+							<span class="letter Z">Z</span>
 						</p>
 
 						<div class="popout-bot">
@@ -102,6 +102,7 @@
 				$('.surface').hide();
 				$('.layer-2').css('display','block');
 				$('.popout-top').css('display','none');
+				$('.popout-bot').css('display','none');
 			});
 
 			$('.back').click(function() {
@@ -117,6 +118,7 @@
 				function() {
 					$('.A:hover').css('color',randomRGB);
 					$('.popout-top').css('display','');
+					$('.popout-top').css('margin-left','');
 					$('.desc').html('Andrea Juliati Kurniasari is my full name');
 				}, function() {
 					$('.A').css('color','black');
@@ -270,6 +272,165 @@
 				}, function() {
 					$('.M').css('color','black');
 					$('.popout-top').css('display','none');
+				}
+			);
+
+			$('.N').hover(
+				function() {
+					$('.N:hover').css('color',randomRGB);
+					$('.popout-bot').css('display','');
+					$('.popout-bot').css('margin-left','');
+					$('.desc').html('Nerd');
+				}, function() {
+					$('.N').css('color','black');
+					$('.popout-bot').css('display','none');
+				}
+			);
+
+			$('.O').hover(
+				function() {
+					$('.O:hover').css('color',randomRGB);
+					$('.popout-bot').css('display','');
+					$('.popout-bot').css('margin-left','45px');
+					$('.desc').html('Optimistic');
+				}, function() {
+					$('.O').css('color','black');
+					$('.popout-bot').css('display','none');
+				}
+			);
+
+
+			$('.P').hover(
+				function() {
+					$('.P:hover').css('color',randomRGB);
+					$('.popout-bot').css('display','');
+					$('.popout-bot').css('margin-left','120px');
+					$('.desc').html('Practical');
+				}, function() {
+					$('.P').css('color','black');
+					$('.popout-bot').css('display','none');
+				}
+			);
+
+
+			$('.Q').hover(
+				function() {
+					$('.Q:hover').css('color',randomRGB);
+					$('.popout-bot').css('display','');
+					$('.popout-bot').css('margin-left','210px');
+					$('.desc').html('Quick Learner');
+				}, function() {
+					$('.Q').css('color','black');
+					$('.popout-bot').css('display','none');
+				}
+			);
+
+
+			$('.R').hover(
+				function() {
+					$('.R:hover').css('color',randomRGB);
+					$('.popout-bot').css('display','');
+					$('.popout-bot').css('margin-left','290px');
+					$('.desc').html('Responsible');
+				}, function() {
+					$('.R').css('color','black');
+					$('.popout-bot').css('display','none');
+				}
+			);
+
+			$('.S').hover(
+				function() {
+					$('.S:hover').css('color',randomRGB);
+					$('.popout-bot').css('display','');
+					$('.popout-bot').css('margin-left','370px');
+					$('.desc').html('Sincere');
+				}, function() {
+					$('.S').css('color','black');
+					$('.popout-bot').css('display','none');
+				}
+			);
+
+			$('.T').hover(
+				function() {
+					$('.T:hover').css('color',randomRGB);
+					$('.popout-bot').css('display','');
+					$('.popout-bot').css('margin-left','440px');
+					$('.desc').html('Tolerant');
+				}, function() {
+					$('.T').css('color','black');
+					$('.popout-bot').css('display','none');
+				}
+			);
+
+			$('.U').hover(
+				function() {
+					$('.U:hover').css('color',randomRGB);
+					$('.popout-bot').css('display','');
+					$('.popout-bot').css('margin-left','520px');
+					$('.desc').html('Understanding');
+				}, function() {
+					$('.U').css('color','black');
+					$('.popout-bot').css('display','none');
+				}
+			);
+
+			$('.V').hover(
+				function() {
+					$('.V:hover').css('color',randomRGB);
+					$('.popout-bot').css('display','');
+					$('.popout-bot').css('margin-left','600px');
+					$('.desc').html('Vigorous');
+				}, function() {
+					$('.V').css('color','black');
+					$('.popout-bot').css('display','none');
+				}
+			);
+
+			$('.W').hover(
+				function() {
+					$('.W:hover').css('color',randomRGB);
+					$('.popout-bot').css('display','');
+					$('.popout-bot').css('margin-left','700px');
+					$('.desc').html('Witty, people say...');
+				}, function() {
+					$('.W').css('color','black');
+					$('.popout-bot').css('display','none');
+				}
+			);
+
+			$('.X').hover(
+				function() {
+					$('.X:hover').css('color',randomRGB);
+					$('.popout-bot').css('display','');
+					$('.popout-bot').css('margin-left','790px');
+					$('.desc').html('Xiāng Gǎng is my second hometown');
+				}, function() {
+					$('.X').css('color','black');
+					$('.popout-bot').css('display','none');
+				}
+			);
+
+			$('.Y').hover(
+				function() {
+					$('.Y:hover').css('color',randomRGB);
+					$('.popout-bot').css('display','');
+					$('.popout-bot').css('margin-left','870px');
+					$('.desc').html('Yin Yang: The simplest concept about life so far');
+				}, function() {
+					$('.Y').css('color','black');
+					$('.popout-bot').css('display','none');
+				}
+			);
+
+			$('.Z').hover(
+				function() {
+					$('.Z:hover').css('color',randomRGB);
+					$('.popout-bot').css('display','');
+					$('.popout-bot').css('margin-left','945px');
+					$('.desc').html('Zillions of motivation');
+				}, function() {
+					$('.Z').css('color','black');
+					$('.popout-bot').css('display','none');
 				}
 			);
 		</script>
